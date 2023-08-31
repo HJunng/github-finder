@@ -19,7 +19,7 @@ $(document).ready(function(){
       $.ajax({
         url:'https://api.github.com/users/'+username+'/repos',
         // header:{
-        //   Authorization: "개인 토큰 넣기"
+        //   Authorization: "개인 토큰 넣기(위에와 같은 거)"
         // },
         data:{
           client_id:'', //만약 local ip 호출 횟수가 40번 이상이 되면 막힐 수 있음
