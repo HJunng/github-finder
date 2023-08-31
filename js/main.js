@@ -3,20 +3,27 @@ $(document).ready(function(){
   //console.log('Ready...')
   $('#searchUser').on('keyup',function(e){
     let username = e.target.value;
+    console.log(username);
 
     // Make request to Github
     $.ajax({
       url:'https://api.github.com/users/'+username,
+      // header:{
+      //   Authorization:"개인 토큰 넣기 (Github - Settings - Developer settings - Personal Access Tokens"
+      // }
       data:{
-        client_id:'',
-        client_secret:''
+        client_id:'', //만약 local ip 호출 횟수가 40번 이상이 되면 막힐 수 있음
+        client_secret:'', //그러면 client부분 지우고 앞에 header 주석 지운 뒤에 Authorization에 개인 access 토큰 넣기.
       }
     }).done(function(user){
       $.ajax({
         url:'https://api.github.com/users/'+username+'/repos',
+        // header:{
+        //   Authorization: "개인 토큰 넣기"
+        // },
         data:{
-          client_id:'',
-          client_secret:'',
+          client_id:'', //만약 local ip 호출 횟수가 40번 이상이 되면 막힐 수 있음
+          client_secret:'', //그러면 client부분 지우고 앞에 header 주석 지운 뒤에 Authorization에 개인 access 토큰 넣기.
           sort: 'created: asc',
           per_page: 5
         }
