@@ -1,0 +1,48 @@
+.container-fluid{
+  margin: 0px 20px;
+}
+.col-mid-9{
+  font-size: 1.5rem;
+}
+.lead{
+  color: gray;
+}
+.avatar{
+  width: 100%;
+}
+img{
+  padding:5px;
+  border: 1px solid lightgray;
+}
+.btn-primary{
+  width: 100%;
+}
+.text-bg-gists{
+  background-color:coral;
+}
+.text-bg-repos{
+  background-color: #f1af14;
+}
+.btn-default{
+  background-color: gray;
+}
+.card{
+  margin-bottom: 50px;
+}
+.row-repo{
+  border-radius: 5px;
+  background-color: #f1f3f5;
+  margin: 10px 0px;
+  height: 100px;
+  align-items: center;
+}
+.row{
+  font-size: 1.25rem;
+}
+.col-md-7{
+  padding-left: 2rem;
+}
+.list-group-item{
+  border: 1px solid #cdd4da;
+  padding: 0.75rem 1rem;
+}
