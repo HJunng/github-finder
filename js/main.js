@@ -8,15 +8,15 @@ $(document).ready(function(){
     $.ajax({
       url:'https://api.github.com/users/'+username,
       data:{
-        client_id:'d61c6cf8240ed6aaa29b',
-        client_secret:'510389f037fa3dd55cf8df64b8916fa306828960'
+        client_id:'',
+        client_secret:''
       }
     }).done(function(user){
       $.ajax({
         url:'https://api.github.com/users/'+username+'/repos',
         data:{
-          client_id:'d61c6cf8240ed6aaa29b',
-          client_secret:'510389f037fa3dd55cf8df64b8916fa306828960',
+          client_id:'',
+          client_secret:'',
           sort: 'created: asc',
           per_page: 5
         }
