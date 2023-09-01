@@ -10,3 +10,6 @@
 3. **View Profile** 버튼을 눌러서 들어가게 되면 해당 username의 <u>깃헙 주소</u>로 연결됩니다.
 4. 가장 최근 repo <u>5개</u>가 뜨게 되고, 해당 repo의 forks, watchers, stars 가 뜨게 됩니다.
 5. **Repo Page**를 누르면 해당 repo로 이동하게 됩니다.
+
+\+ 6. 잔디밭 (기능추가)
+![image](https://github.com/HJunng/github-finder-js/assets/56528404/63b35056-cd59-4c8a-90f8-0310a3fa59a9)
