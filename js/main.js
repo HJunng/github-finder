@@ -12,7 +12,7 @@ $(document).ready(function(){
         Authorization:"개인 토큰 넣기 (Github - Settings - Developer settings - Personal Access Tokens"
       },
       data:{
-        client_id:'', //만약 local ip 호출 횟수가 40번 이상이 되면 막힐 수 있음
+        client_id:'', //만약 local ip 호출 횟수가 40번 이상이 되면 막힐 수 있음 -> Authorization 쓰면 나머지 여기 두줄 지워주세요!
         client_secret:'', //그러면 client부분 지우고 앞에 header 주석 지운 뒤에 Authorization에 개인 access 토큰 넣기.
       }
     }).done(function(user){
@@ -22,7 +22,7 @@ $(document).ready(function(){
         //   Authorization: "개인 토큰 넣기(위에와 같은 거)"
         // },
         data:{
-          client_id:'', //만약 local ip 호출 횟수가 40번 이상이 되면 막힐 수 있음
+          client_id:'', //만약 local ip 호출 횟수가 40번 이상이 되면 막힐 수 있음 -> Authorization 쓰면 나머지 여기 두줄 지워주세요!
           client_secret:'', //그러면 client부분 지우고 앞에 header 주석 지운 뒤에 Authorization에 개인 access 토큰 넣기.
           sort: 'created: asc',
           per_page: 5
