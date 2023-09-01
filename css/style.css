@@ -46,3 +46,9 @@ img{
   border: 1px solid #cdd4da;
   padding: 0.75rem 1rem;
 }
+.git-chart {
+  margin: 50px 0px;
+}
+.git-chart img{
+  width: 90%;
+}
